@@ -3,10 +3,101 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Welcome to my Portfolio</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/fmo1vnd.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fmo1vnd.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <!-- I need to scroll to the right section on click -->
+          <li>
+            <a href="index.html"><h4>Loïk Ninine</h4></a>
+          </li>
+          <li>
+            <a href="about.html"><h4>About Me</h4></a>
+          </li>
+          <li>
+            <a href="projects.html"><h4>Projects</h4></a>
+          </li>
+          <li>
+            <a href="contact.html"><h4>Contact</h4></a>
+          </li>
+        </ul>
+      </nav>
+      <banner>
+        <div class="banner__imageandtext__container">
+          <div class="banner__text">
+            <h1>Hello</h1>
+            <h2>and welcome to my portfolio</h2>
+          </div>
+          <img src="images/banner_image.png" alt="banner_image" />
+        </div>
+      </banner>
+    </header>
+    <main>
+      <!-- creation of the about me section -->
+      <section>
+        <div class="aboutme">
+          <h3>About me</h3>
+          <!-- creation of an array mixing line and text -->
+          <div class="aboutme__array">
+            <hr class="line1" />
+            <!-- creation of a title line -->
+            <h4>name</h4>
+            <p>loïk</p>
+            <p>ninine</p>
+            <hr class="line2" />
+            <h4>status</h4>
+            <p>student</p>
+            <p>hetic</p>
+            <hr class="line3" />
+            <h4>work</h4>
+            <p>twig</p>
+            <p>php/symfony</p>
+            <hr class="line4" />
+            <h4>hobbys</h4>
+            <p>video-game</p>
+            <p>friends</p>
+            <hr class="line5" />
+          </div>
+          <hr />
+        </div>
+      </section>
+      <!-- creation of the projects section -->
+      <section>
+        <div class="projects">
+          <h3>Projects</h3>
+          <!-- first project card creation -->
+          <div class="project__card">
+            <img src="images/project_images/_2MG1196.jpg" alt="project image" />
+            <div class="project__info__container">
+              <h3 class="project__card__title">Lorem ipsum</h3>
+              <!-- project__skill__box will contain the skills used for the project -->
+              <ul class="project__skill_box">
+                <li>lorem</li>
+                <li>lorem ipsum</li>
+              </ul>
+            </div>
+          </div>
+          <img src="images/project_grid_image.png" alt="grid image" />
+          <hr />
+        </div>
+      </section>
+    </main>
+    <!-- creation of the footer -->
+    <footer>
+      <h3>Let's get in touch !</h3>
+      <h4>E-mail</h4>
+      <h4>Resume</h4>
+      <a href="https://github.com/OBSemvyuS">
+        <img src="images/GitHub.svg" alt="GitHub Icon" />
+      </a>
+      <a href="https://www.linkedin.com/in/lo%C3%AFkninine/">
+        <img src="images/Linkedin.svg" alt="Linkedin Icon" />
+      </a>
+    </footer>
+  </body>
 </html>
