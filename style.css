@@ -7,6 +7,7 @@ h1 {
   font-size-adjust: 0.5;
   position: relative;
   left: -0.9vw;
+  /* z-index: -1; */
 }
 
 h2 {
@@ -36,6 +37,15 @@ h4 {
   color: black;
 }
 
+h5 {
+  font-family: "roc-grotesk", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.57vw;
+  font-size-adjust: 0.5;
+  color: black;
+}
+
 p {
   font-family: "roc-grotesk", sans-serif;
   font-weight: 400;
@@ -46,28 +56,45 @@ p {
 }
 
 /* Adding body proprieties*/
-.body__color{
-  background-color: #FFCB13;
+.body__color {
+  background-color: #ffcb13;
 }
 
-.body__padding{
+.body__padding {
   padding-left: 2.08vw;
   padding-right: 2.08vw;
 }
 
 /* fixing some reset.css issues */
-ul, li {
+ul,
+li {
   margin: 0;
   padding: 0;
 }
 
-
-body img{
+body img {
   width: 200px;
 }
 
-/* adding header */
+/* adding fixed nav bar */
 
 nav ul li a {
   text-decoration: none;
+}
+
+.nav__bar ul {
+  background-color:#ffcb13;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 95.75%;
+}
+
+/*different screen nav height */
+.nav__bar ul {
+  height: calc(2vh + 95 * ((100vw - 390px) / (3440 - 390)));
+  transition: height 0.15s linear;
 }
