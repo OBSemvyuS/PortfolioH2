@@ -1,24 +1,73 @@
-/* Ajout des styles de font */
+/* Adding proper font style */
 h1 {
   font-family: "roc-grotesk", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
+  font-size: 15vw;
+  font-size-adjust: 0.5;
+  position: relative;
+  left: -0.9vw;
 }
 
 h2 {
   font-family: "roc-grotesk", sans-serif;
   font-weight: 500;
   font-style: normal;
+  font-size: 6.8vw;
+  font-size-adjust: 0.5;
+  color: black;
 }
 
 h3 {
   font-family: "roc-grotesk", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
+  font-size: 3vw;
+  font-size-adjust: 0.5;
+  color: black;
 }
 
 h4 {
   font-family: "roc-grotesk", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-style: normal;
+  font-size: 2.57vw;
+  font-size-adjust: 0.5;
+  color: black;
+}
+
+p {
+  font-family: "roc-grotesk", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.57vw;
+  font-size-adjust: 0.5;
+  color: black;
+}
+
+/* Adding body proprieties*/
+.body__color{
+  background-color: #FFCB13;
+}
+
+.body__padding{
+  padding-left: 2.08vw;
+  padding-right: 2.08vw;
+}
+
+/* fixing some reset.css issues */
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+
+body img{
+  width: 200px;
+}
+
+/* adding header */
+
+nav ul li a {
+  text-decoration: none;
 }
