@@ -63,8 +63,27 @@ body::-webkit-scrollbar {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  transition: background-color 0.5s ease;
+}
+
+/* adding fixed nav bar */
+
+nav ul li a {
+  text-decoration: none;
+}
+
+.nav__bar ul {
+  background-color: #ffcb13;
+  transition: background-color 0.2s ease;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 96%;
 }
 
 /* Adding body proprieties*/
@@ -126,23 +145,6 @@ li {
 
 #temporary {
   width: 200px;
-}
-
-/* adding fixed nav bar */
-
-nav ul li a {
-  text-decoration: none;
-}
-
-.nav__bar ul {
-  background-color: #ffcb13;
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  width: 95.75%;
 }
 
 .nav__decoy {
@@ -259,7 +261,7 @@ nav ul li a {
 }
 
 /* creation a grid layout for my about me array */
-.array-textline1 {
+.array-text {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -267,13 +269,68 @@ nav ul li a {
   row-gap: 0.75vh;
 }
 
-.array-textline1 > * {
+.array-text > * {
   border-bottom: 1.5px solid #000;
 }
 
-.array-textline1 :nth-child(-n + 3) {
+.array-text :nth-child(-n + 3) {
   border-top: 1.5px solid #000;
   padding-top: 0.75vh;
 }
 
-/* fixing some layout issue for the responsive */
+/* Creation of the project Section */
+.project__card {
+  background-image: url(images/project_images/Project1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  margin-top: 7.5vh;
+}
+
+/* Resizing the margin top for different screen */
+@media only screen and (min-width: 290px) and (max-width: 400px) {
+  .project__card {
+    margin-top: 2.5vh;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+  .project__card {
+    margin-top: 3.5vh;
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+  .project__card {
+    margin-top: 5vh;
+  }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1300px) {
+  .project__card {
+    margin-top: 6.5vh;
+  }
+}
+
+/* media queries for resizing the background picture */
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .project__card {
+    background-image: url(images/project_images/Project1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45vh;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+  .project__card {
+    background-image: url(images/project_images/Project1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+  }
+}
+
+
