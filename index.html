@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/fmo1vnd.css" />
   </head>
-  <body class="body__color body__padding">
+  <body class="body__color body__padding body__margin">
     <header>
-      <nav class="nav__bar">
+      <nav class="nav__bar nav__decoy">
         <ul>
           <!-- I need to scroll to the right section on click -->
           <li>
@@ -27,69 +27,75 @@
           </li>
         </ul>
       </nav>
-      <banner>
-        <div class="banner__imageandtext__container">
-          <div class="banner__text">
-            <h1>Hello</h1>
-            <h2>and welcome to my portfolio</h2>
-          </div>
-          <img src="images/banner_image.png" alt="banner_image" />
+      <div class="homepage-banner">
+        <div class="homepage-banner__text-content">
+          <h1>Hello</h1>
+          <h2>and welcome to my portfolio</h2>
         </div>
-      </banner>
+      </div>
     </header>
     <main>
       <!-- creation of the about me section -->
       <section>
-        <div class="aboutme">
-          <h3>About me</h3>
+        <div class="body-indentation">
+          <h3 class="title-indentation">About me</h3>
           <!-- creation of an array mixing line and text -->
           <div class="aboutme__array">
             <hr class="line1" />
-            <!-- creation of a title line -->
-            <h4>name</h4>
-            <p>loïk</p>
-            <p>ninine</p>
+            <div class="array-textline1">
+              <h4>name</h4>
+              <p>loïk</p>
+              <p>ninine</p>
+            </div>
             <hr class="line2" />
-            <h4>status</h4>
-            <p>student</p>
-            <p>hetic</p>
+            <div class="array-textline2">
+              <h4>status</h4>
+              <p>student</p>
+              <p>hetic</p>
+            </div>
             <hr class="line3" />
-            <h4>work</h4>
-            <p>twig</p>
-            <p>php/symfony</p>
+            <div class="array-textline3">
+              <h4>work</h4>
+              <p>twig</p>
+              <p>php/symfony</p>
+            </div>
             <hr class="line4" />
-            <h4>hobbys</h4>
-            <p>video-game</p>
-            <p>friends</p>
+            <div class="array-textline4">
+              <h4>hobbys</h4>
+              <p>video-game</p>
+              <p>friends</p>
+            </div>
             <hr class="line5" />
           </div>
-          <hr />
         </div>
+        <hr class="body-hr" />
       </section>
       <!-- creation of the projects section -->
-      <section>
-        <div class="projects">
-          <h3>Projects</h3>
-          <!-- first project card creation -->
-          <div class="project__card">
-            <img src="images/project_images/_2MG1196.jpg" alt="project image" />
-            <div class="project__info__container">
-              <h3 class="project__card__title">Lorem ipsum</h3>
-              <!-- project__skill__box will contain the skills used for the project -->
-              <ul class="project__skill_box">
-                <li><h3>lorem</h3></li>
-                <li><h3>lorem ipsum</h3></li>
-              </ul>
-            </div>
+      <section class="projects-container">
+        <h3 class="body-indentation">Projects</h3>
+        <!-- first project card creation -->
+        <div class="project__card">
+          <img src="images/project_images/_2MG1196.jpg" alt="project image" />
+          <div class="project__info__container">
+            <h4 class="project__card__title">Lorem ipsum</h4>
+            <!-- project__skill__box will contain the skills used for the project -->
+            <ul class="project__skill_box">
+              <li><h4>lorem</h4></li>
+              <li><h4>lorem ipsum</h4></li>
+            </ul>
           </div>
-          <img src="images/project_grid_image.png" alt="grid image" />
-          <hr />
         </div>
+        <img
+          id="temporary"
+          src="images/project_grid_image.png"
+          alt="grid image"
+        />
+        <hr class="body-hr" />
       </section>
     </main>
     <!-- creation of the footer -->
     <footer>
-      <h3>Let's get in touch !</h3>
+      <h3 class="body-indentation">Let's get in touch !</h3>
       <h4>E-mail</h4>
       <h4>Resume</h4>
       <a href="https://github.com/OBSemvyuS">
