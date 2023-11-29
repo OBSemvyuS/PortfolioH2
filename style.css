@@ -63,8 +63,8 @@ body::-webkit-scrollbar {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
 }
 
 /* Adding body proprieties*/
@@ -77,10 +77,40 @@ body {
   padding-right: 2.08vw;
 }
 
+/* creating the inter section hr for all devices */
 .body-hr {
   height: 3px;
   background: black;
   border: none;
+  margin-top: 11vh;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+  .body-hr {
+    height: 1px;
+    margin-top: 4vh;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+  .body-hr {
+    height: 1px;
+    margin-top: 5.5vh;
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+  .body-hr {
+    height: 1.25px;
+    margin-top: 6vh;
+  }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1200px) {
+  .body-hr {
+    height: 1.5px;
+    margin-top: 10vh;
+  }
 }
 
 /* fixing some reset.css issues */
@@ -145,7 +175,7 @@ nav ul li a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 75vh;
+    height: 50vh;
   }
 }
 
@@ -164,81 +194,86 @@ nav ul li a {
 }
 
 /* starting main css */
+/* About me section */
 
 .body-indentation {
-  margin-top: 20vh;
+  margin-top: 13vh;
   margin-left: 24vw;
 }
 
-.h3-indentation {
-  margin-bottom: 7.5vh;
+/* fixing weird gap About Me and the banner on mobile */
+@media only screen and (min-width: 290px) and (max-width: 400px) {
+  .body-indentation {
+    margin-top: 4vh;
+    margin-left: 24vw;
+  }
 }
 
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+  .body-indentation {
+    margin-top: 5vh;
+    margin-left: 24vw;
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+  .body-indentation {
+    margin-top: 8vh;
+    margin-left: 24vw;
+  }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1200px) {
+  .body-indentation {
+    margin-top: 9vh;
+    margin-left: 24vw;
+  }
+}
+
+/* fixing weird gap About Me and the array on mobile */
 .aboutme__array {
   padding-top: 7.5vh;
 }
-.line1 {
-  height: 1px;
-  background: black;
-  border: none;
+
+@media only screen and (min-width: 290px) and (max-width: 400px) {
+  .aboutme__array {
+    padding-top: 2.5vh;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+  .aboutme__array {
+    padding-top: 3.5vh;
+  }
 }
 
-.line2 {
-  height: 1.75px;
-  background: black;
-  border: none;
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+  .aboutme__array {
+    padding-top: 5vh;
+  }
 }
 
-.line3 {
-  height: 2px;
-  background: black;
-  border: none;
+@media only screen and (min-width: 1001px) and (max-width: 1200px) {
+  .aboutme__array {
+    padding-top: 6.5vh;
+  }
 }
 
-.line4 {
-  height: 2.25px;
-  background: black;
-  border: none;
-}
-
-.line5 {
-  height: 2.75px;
-  background: black;
-  border: none;
-}
-
+/* creation a grid layout for my about me array */
 .array-textline1 {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  justify-content: center;
+  row-gap: 0.75vh;
 }
 
-/* .array-textline1 * {
-  margin-right: 20vw;
-} */
-
-.array-textline2 {
-  display: flex;
-  flex-direction: row;
+.array-textline1 > * {
+  border-bottom: 1.5px solid #000;
 }
 
-/* .array-textline2 * {
-  margin-right: 17vw;
-} */
-
-.array-textline3 {
-  display: flex;
-  flex-direction: row;
+.array-textline1 :nth-child(-n + 3) {
+  border-top: 1.5px solid #000;
+  padding-top: 0.75vh;
 }
 
-/* .array-textline3 * {
-  margin-right: 20vw;
-} */
-
-.array-textline4 {
-  display: flex;
-  flex-direction: row;
-}
-
-/* .array-textline4 * {
-  margin-right: 20vw;
-} */
+/* fixing some layout issue for the responsive */
