@@ -78,23 +78,14 @@ body {
   transition: background-color 0.5s ease;
 }
 
+body {
+  cursor: url('images/custom_mouse_cursor.png'), auto;
+}
+
 /* adding fixed nav bar */
 
 nav ul li {
   text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-span,
-li,
-a {
-  cursor: default;
 }
 
 .nav__bar ul {
