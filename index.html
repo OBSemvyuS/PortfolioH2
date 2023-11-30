@@ -14,16 +14,16 @@
         <ul>
           <!-- I need to scroll to the right section on click -->
           <li>
-            <a href="index.html"><h5>Loïk Ninine</h5></a>
+            <h5>Loïk Ninine</h5>
           </li>
           <li>
-            <a href="about.html"><h5>About Me</h5></a>
+            <h5>About Me</h5>
           </li>
           <li>
-            <a href="projects.html"><h5>Projects</h5></a>
+            <h5>Projects</h5>
           </li>
           <li>
-            <a href="contact.html"><h5>Contact</h5></a>
+            <h5>Contact</h5>
           </li>
         </ul>
       </nav>
@@ -73,25 +73,30 @@
           </div>
         </div>
         <div class="project-gridimage"></div>
-        <hr class="body-hr body-hr-second" />
+        <hr class="body-hr body-hr-sec" />
       </section>
     </main>
     <!-- creation of the footer -->
     <footer class="body-indentation">
-      <h3>Let's get in touch !</h3>
-      <div class="footer-text">
-        <h4>E-mail</h4>
-        <h4>Resume</h4>
-        <div class="footer-socials">
-          <a href="https://github.com/OBSemvyuS">
-            <img src="images/GitHub.svg" alt="GitHub Icon" />
-          </a>
-          <a href="https://www.linkedin.com/in/lo%C3%AFkninine/">
-            <img src="images/Linkedin.svg" alt="Linkedin Icon" />
-          </a>
+      <!-- I had to create this div for the scrolldown.js because queryselctor can not take an 
+        HTML Headgin Element as a parameter -->
+      <div>
+        <h3>Let's get in touch !</h3>
+        <div class="footer-text">
+          <h4>E-mail</h4>
+          <h4>Resume</h4>
+          <div class="footer-socials">
+            <a href="https://github.com/OBSemvyuS">
+              <img src="images/GitHub.svg" alt="GitHub Icon" />
+            </a>
+            <a href="https://www.linkedin.com/in/lo%C3%AFkninine/">
+              <img src="images/Linkedin.svg" alt="Linkedin Icon" />
+            </a>
+          </div>
         </div>
       </div>
     </footer>
     <script src="colorswap.js"></script>
+    <script src="scrolldown.js"></script>
   </body>
 </html>

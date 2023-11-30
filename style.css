@@ -80,8 +80,21 @@ body {
 
 /* adding fixed nav bar */
 
-nav ul li a {
+nav ul li {
   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+li,
+a {
+  cursor: default;
 }
 
 .nav__bar ul {
