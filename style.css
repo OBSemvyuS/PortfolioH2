@@ -580,3 +580,18 @@ li {
     margin-bottom: 3vh;
   }
 }
+
+/* Creating Resume HTML */
+
+.resume-padding {
+  padding-left: 2.08vw;
+  padding-right: 2.08vw;
+  background-color: #000;
+}
+
+.background-image {
+  background-image: url(images/CV_LoïkNinine.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
