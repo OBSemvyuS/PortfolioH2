@@ -3,7 +3,7 @@ h1 {
   font-family: "roc-grotesk", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 15vw;
+  font-size: 13vw;
   font-size-adjust: 0.5;
   margin: 0;
 }
@@ -604,44 +604,35 @@ li {
   box-sizing: border-box;
 }
 
-
-
-
 .test {
-  /* position: fixed; */
-  /* top: 0;
-  left: 0; */
+  
   width: 100%;
   height: 60vh;
-  /* background-color: black; */
   display: flex;
   align-items: center;
 }
 
 /* si ajout projet modifier valeur slider width de 4 à correspondante */
 .slider {
-  position: absolute;
+  /* position: relative; */
   width: calc(4 * 100vw);
   height: 80vh;
-  /* background-color: aqua; */
 }
 
 .slider-inner {
   position: absolute;
-  /* top: 10%; */
+
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  /* background-color: green; */
 }
 
 .project__card {
   position: relative;
   width: calc(100vw - 4.16vw);
   height: 100%;
-  /* background-color: blue; */
   overflow: hidden;
 }
 
@@ -653,3 +644,10 @@ li {
   background-size: cover;
   background-position: center;
 }
+
+.slider-margintop{
+  margin-top: 20vh;
+  margin-bottom: 15vh;
+}
+
+

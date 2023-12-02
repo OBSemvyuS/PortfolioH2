@@ -23,13 +23,15 @@ function setTransform(el, transform) {
   el.style.transform = transform;
 }
 
+
 function init() {
   sliderWidth = slider.getBoundingClientRect().width;
   imageWidth = sliderWidth / images.length;
   slider.style.width = `${imageWidth * images.length}px`; 
-  document.body.style.height = `${
-    sliderWidth - (window.innerWidth - window.innerHeight)
-  }px`;
+  const sliderHeight = sliderWidth - (window.innerWidth - window.innerHeight);
+  document.body.style.height = `${Math.max(sliderHeight, window.innerHeight)}px`;
+
+
 
   slider.addEventListener("mousedown", (e) => {
     isDragging = true;
