@@ -175,7 +175,7 @@ li {
 
 /* Creating the banner image and resizing it for mobile  */
 .homepage-banner {
-  background-image: url(images/banner_image.svg);
+  background-image: url(../images/banner_image.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -189,7 +189,7 @@ li {
 /* media queries for resizing the background picture */
 @media only screen and (min-width: 300px) and (max-width: 600px) {
   .homepage-banner {
-    background-image: url(images/banner_image.svg);
+    background-image: url(../images/banner_image.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -199,7 +199,7 @@ li {
 
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
   .homepage-banner {
-    background-image: url(images/banner_image.svg);
+    background-image: url(../images/banner_image.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -303,7 +303,7 @@ li {
 
 /* Creation of the project Section */
 .project__card {
-  background-image: url(images/project_images/Project1.jpg);
+  background-image: url(../images/project_images/Project1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -356,7 +356,7 @@ li {
 /* media queries for resizing the background picture */
 @media only screen and (min-width: 300px) and (max-width: 600px) {
   .project__card {
-    background-image: url(images/project_images/Project1.jpg);
+    background-image: url(../images/project_images/Project1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -366,7 +366,7 @@ li {
 
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
   .project__card {
-    background-image: url(images/project_images/Project1.jpg);
+    background-image: url(../images/project_images/Project1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -413,7 +413,7 @@ li {
 
 /* Wave image under project slider */
 .project-gridimage {
-  background-image: url(images/under_slider_wave.png);
+  background-image: url(../images/under_slider_wave.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -425,7 +425,7 @@ li {
 /* fixing the image height  */
 @media only screen and (min-width: 300px) and (max-width: 600px) {
   .project-gridimage {
-    background-image: url(images/under_slider_wave.png);
+    background-image: url(../images/under_slider_wave.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -435,7 +435,7 @@ li {
 
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
   .project-gridimage {
-    background-image: url(images/under_slider_wave.png);
+    background-image: url(../images/under_slider_wave.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -590,7 +590,7 @@ li {
 }
 
 .background-image {
-  background-image: url(images/CV_LoïkNinine.png);
+  background-image: url(../images/CV_LoïkNinine.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
