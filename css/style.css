@@ -79,10 +79,12 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
   transition: background-color 0.5s ease;
+  overscroll-behavior: none;
+  overflow-x: hidden;
 }
 
 body {
-  cursor: url("images/custom_mouse_cursor.png"), auto;
+  cursor: url("../images2/custom_mouse_cursor.png"), auto;
 }
 
 /* adding fixed nav bar */
@@ -175,7 +177,7 @@ li {
 
 /* Creating the banner image and resizing it for mobile  */
 .homepage-banner {
-  background-image: url(../images/banner_image.svg);
+  background-image: url(../images2/banner_image.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -189,7 +191,7 @@ li {
 /* media queries for resizing the background picture */
 @media only screen and (min-width: 300px) and (max-width: 600px) {
   .homepage-banner {
-    background-image: url(../images/banner_image.svg);
+    background-image: url(../images2/banner_image.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -199,7 +201,7 @@ li {
 
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
   .homepage-banner {
-    background-image: url(../images/banner_image.svg);
+    background-image: url(../images2/banner_image.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -302,7 +304,7 @@ li {
 }
 
 /* Creation of the project Section */
-.project__card {
+/* .project__card {
   background-image: url(../images/project_images/Project1.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -315,10 +317,10 @@ li {
   padding-bottom: 3vh;
   padding-left: 4vh;
   padding-right: 4vh;
-}
+} */
 
 /* Resizing the margin top for different screen */
-@media only screen and (min-width: 290px) and (max-width: 400px) {
+/* @media only screen and (min-width: 290px) and (max-width: 400px) {
   .project__card {
     margin-top: 2.5vh;
     padding-bottom: 1vh;
@@ -351,10 +353,10 @@ li {
     padding-left: 4vh;
     padding-right: 4vh;
   }
-}
+} */
 
 /* media queries for resizing the background picture */
-@media only screen and (min-width: 300px) and (max-width: 600px) {
+/* @media only screen and (min-width: 300px) and (max-width: 600px) {
   .project__card {
     background-image: url(../images/project_images/Project1.jpg);
     background-position: center;
@@ -409,11 +411,11 @@ li {
   .skill__box {
     padding: 0.9vh 1.75vh 0.5vh 1.75vh;
   }
-}
+} */
 
 /* Wave image under project slider */
 .project-gridimage {
-  background-image: url(../images/under_slider_wave.png);
+  background-image: url(../images2/under_slider_wave.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -425,7 +427,7 @@ li {
 /* fixing the image height  */
 @media only screen and (min-width: 300px) and (max-width: 600px) {
   .project-gridimage {
-    background-image: url(../images/under_slider_wave.png);
+    background-image: url(../images2/under_slider_wave.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -435,7 +437,7 @@ li {
 
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
   .project-gridimage {
-    background-image: url(../images/under_slider_wave.png);
+    background-image: url(../images2/under_slider_wave.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -590,8 +592,64 @@ li {
 }
 
 .background-image {
-  background-image: url(../images/CV_LoïkNinine.png);
+  background-image: url(../images2/CV_LoïkNinine.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* Slider tutorial */
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+.test {
+  /* position: fixed; */
+  /* top: 0;
+  left: 0; */
+  width: 100%;
+  height: 60vh;
+  /* background-color: black; */
+  display: flex;
+  align-items: center;
+}
+
+/* si ajout projet modifier valeur slider width de 4 à correspondante */
+.slider {
+  position: absolute;
+  width: calc(4 * 100vw);
+  height: 80vh;
+  /* background-color: aqua; */
+}
+
+.slider-inner {
+  position: absolute;
+  /* top: 10%; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* background-color: green; */
+}
+
+.project__card {
+  position: relative;
+  width: calc(100vw - 4.16vw);
+  height: 100%;
+  /* background-color: blue; */
+  overflow: hidden;
+}
+
+.img {
+  position: absolute;
+  left: -20vw;
+  width: 140vw;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
