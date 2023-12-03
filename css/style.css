@@ -83,15 +83,18 @@ body {
   overflow-x: hidden;
 }
 
-body {
+/* body {
   cursor: url("../images2/custom_cursor_cursor.png"), auto;
   transition: cursor 0.5s ease;
-}
+} */
 
 .slider :hover {
-  cursor: url("../images2/drag_mouse_cursor.png"), grab;
+  cursor: grab;
 }
 
+.project__info__container :hover{
+  cursor: pointer;
+}
 /* adding fixed nav bar */
 
 nav ul li {
@@ -499,12 +502,6 @@ li {
   box-sizing: border-box;
 }
 
-/* .test {
-  width: 100%;
-  height: 60vh;
-  display: flex;
-  align-items: center;
-} */
 
 /* si ajout projet modifier valeur slider width de 4 à correspondante */
 .slider {
@@ -618,6 +615,7 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
   padding-left: 9vh;
 }
 
@@ -649,7 +647,7 @@ li {
 
 .h3button {
   font-family: "roc-grotesk", sans-serif;
-  font-weight: 400;
+  font-weight: 350;
   font-style: normal;
   font-size: 5.5vw;
   font-size-adjust: 0.5;
@@ -657,8 +655,9 @@ li {
 }
 
 .arrow {
-  height: 0.6em;
-  margin-right: 10vw;
+  height: 4.7vh;
+  width: auto;
+  margin-left: 1vw;
 }
 
 .h4button {
