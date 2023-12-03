@@ -35,24 +35,4 @@ document.addEventListener("keyup", function (event) {
     rightCtrl = false;
   }
 });
-// document.addEventListener("keydown", function (event) {
-//   if (event.code === "ControlLeft") {
-//     leftCtrl = true;
-//   } else if (event.code === "ControlRight") {
-//     rightCtrl = true;
-//   }
 
-//   if (leftCtrl && rightCtrl) {
-//     let randomColor = colors[Math.floor(Math.random() * colors.length)];
-//     document.body.style.backgroundColor = randomColor;
-//     document.querySelector(".nav__bar ul").style.backgroundColor = randomColor;
-//   }
-// });
-
-// document.addEventListener("keyup", function (event) {
-//   if (event.code === "ControlLeft") {
-//     leftCtrl = false;
-//   } else if (event.code === "ControlRight") {
-//     rightCtrl = false;
-//   }
-// });
