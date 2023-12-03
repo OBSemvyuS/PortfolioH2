@@ -84,7 +84,12 @@ body {
 }
 
 body {
-  cursor: url("../images2/custom_mouse_cursor.png"), auto;
+  cursor: url("../images2/custom_cursor_cursor.png"), auto;
+  transition: cursor 0.5s ease;
+}
+
+.slider :hover{
+  cursor: url("../images2/drag_mouse_cursor.png"), grab;
 }
 
 /* adding fixed nav bar */
