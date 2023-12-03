@@ -1,3 +1,4 @@
+
 let images = [...document.querySelectorAll(".project__card .img")];
 let slider = document.querySelector(".slider");
 let sliderWidth;
@@ -23,21 +24,21 @@ function setTransform(el, transform) {
   el.style.transform = transform;
 }
 
-
 function init() {
   sliderWidth = slider.getBoundingClientRect().width;
   imageWidth = sliderWidth / images.length;
-  slider.style.width = `${imageWidth * images.length}px`; 
+  slider.style.width = `${imageWidth * images.length}px`;
   const sliderHeight = sliderWidth - (window.innerWidth - window.innerHeight);
-  document.body.style.height = `${Math.max(sliderHeight, window.innerHeight)}px`;
-
-
+  document.body.style.height = `${Math.max(
+    sliderHeight,
+    window.innerHeight
+  )}px`;
 
   slider.addEventListener("mousedown", (e) => {
     isDragging = true;
     startX = e.clientX;
     offsetX = current;
-    e.preventDefault(); 
+    e.preventDefault();
   });
 
   slider.addEventListener("mouseup", () => {
@@ -49,7 +50,7 @@ function init() {
       const mouseX = e.clientX;
       const dragDistance = mouseX - startX;
       target = offsetX - dragDistance;
-      e.preventDefault(); 
+      e.preventDefault();
     }
   });
 
@@ -81,6 +82,16 @@ function animateImages() {
   images.forEach((image, idx) => {
     intersectionRatioValue = ratio - idx * 0.001;
     setTransform(image, `translateX(${intersectionRatioValue * 70}px)`);
+
+    // Supposons que chaque image a un élément 'project__info__container'
+    let infoContainer = image.querySelector(".project__info__container");
+    if (infoContainer) {
+      // Appliquer une transformation inverse à 'project__info__container'
+      setTransform(
+        infoContainer,
+        `translateX(${-intersectionRatioValue * 70}px)`
+      );
+    }
   });
 }
 
