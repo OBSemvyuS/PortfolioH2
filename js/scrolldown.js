@@ -1,29 +1,3 @@
-// var offset = 200;
-
-// document.querySelectorAll("nav h5")[0].addEventListener("click", function () {
-//   window.scrollTo({ top: 0, behavior: "smooth" });
-// });
-
-// document.querySelectorAll("nav h5")[1].addEventListener("click", function () {
-//   var elementPosition = document
-//     .querySelector("main > section")
-//     .getBoundingClientRect().top;
-//   window.scrollTo({ top: elementPosition - offset, behavior: "smooth" });
-// });
-
-// document.querySelectorAll("nav h5")[2].addEventListener("click", function () {
-//   var elementPosition = document
-//     .querySelectorAll("main > section")[1]
-//     .getBoundingClientRect().top;
-//   window.scrollTo({ top: elementPosition - offset, behavior: "smooth" });
-// });
-
-// document.querySelectorAll("nav h5")[3].addEventListener("click", function () {
-//   var elementPosition = document
-//     .querySelector("footer")
-//     .getBoundingClientRect().top;
-//   window.scrollTo({ top: elementPosition - offset, behavior: "smooth" });
-// });
 
 var offset = 100;
 

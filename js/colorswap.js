@@ -1,5 +1,3 @@
-let leftCtrl = false;
-let rightCtrl = false;
 let colors = [
   "#4DC156",
   "#228AC2",
@@ -17,22 +15,7 @@ function changeBackgroundColor() {
 }
 
 document.addEventListener("keydown", function (event) {
-  if (event.code === "ControlLeft") {
-    leftCtrl = true;
-  } else if (event.code === "ControlRight") {
-    rightCtrl = true;
-  }
-
-  if (leftCtrl && rightCtrl) {
+  if (event.code === "KeyQ") {
     changeBackgroundColor();
   }
 });
-
-document.addEventListener("keyup", function (event) {
-  if (event.code === "ControlLeft") {
-    leftCtrl = false;
-  } else if (event.code === "ControlRight") {
-    rightCtrl = false;
-  }
-});
-

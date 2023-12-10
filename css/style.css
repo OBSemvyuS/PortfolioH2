@@ -342,6 +342,17 @@ li {
     height: 20vh;
   }
 }
+
+@media only screen and (min-width: 1101px){
+  .project-gridimage {
+    background-image: url(../images2/under_slider_wave.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+  }
+}
+
 /* fixing the margin-bottom gap */
 @media only screen and (min-width: 300px) and (max-width: 400px) {
   .project-gridimage {
@@ -455,8 +466,8 @@ li {
 
 @media only screen and (min-width: 801px) and (max-width: 1000px) {
   .footer-socials > a > img {
-    height: 5vh;
-    width: 5vh;
+    height: 4vh;
+    width: 4vh;
     margin-right: 3vh;
   }
   .footer-text {
@@ -469,8 +480,8 @@ li {
 
 @media only screen and (min-width: 1001px) and (max-width: 1200px) {
   .footer-socials > a > img {
-    height: 5vh;
-    width: 5vh;
+    height: 4vh;
+    width: 4vh;
     margin-right: 5vh;
   }
   .footer-text {
@@ -481,19 +492,18 @@ li {
   }
 }
 
-/* Creating Resume HTML */
-
-.resume-padding {
-  padding-left: 2.08vw;
-  padding-right: 2.08vw;
-  background-color: #000;
-}
-
-.background-image {
-  background-image: url(../images2/CV_LoïkNinine.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+@media only screen and (min-width: 1201px) {
+  .footer-socials > a > img {
+    height: 4vh;
+    width: 4vh;
+    margin-right: 5vh;
+  }
+  .footer-text {
+    margin-top: 4vh;
+  }
+  .footer-text > * {
+    margin-bottom: 3vh;
+  }
 }
 
 /* Slider tutorial */
@@ -686,36 +696,15 @@ li {
   }
 }
 
-/* @media only screen and (min-width: 600px) and (max-width: 900px) {
-  .skill__boxes__paddingfix1 {
-    padding-right: 8vw;
-  }
-  .title__paddingfix1 {
-    padding-left: 8vw;
-  }
-  .skill__boxes__paddingfix2 {
-    padding-right: 18vw;
-  }
-  .title__paddingfix2 {
-    padding-left: 0vw;
-  }
+/* Colorswap Announcement */
 
-  .skill__boxes__paddingfix3 {
-    padding-right: 26vw;
-  }
-  .title__paddingfix3 {
-    
-  }
+.colorswap{
+  margin-top: 15vh;
+  display: flex;
+}
 
-  .skill__boxes__paddingfix4 {
-    padding-right: 8vw;
-  }
-  .title__paddingfix4 {
-    padding-left: 8vw;
-  }
-  .arrow {
-    height: 2vh;
-    width: auto;
-    margin-left: 1vw;
-  }
-} */
+.A_key{
+  height: auto;
+  width: 2vw;
+  margin-left: 1vw;
+}
